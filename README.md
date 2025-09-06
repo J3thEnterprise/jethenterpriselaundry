@@ -1,2 +1,0 @@
-# jethenterpriselaundry
-Laundry service website
