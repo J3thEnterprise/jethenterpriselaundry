@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us — JE Drycleaning</title>
+  <meta name="description" content="Contact JE Drycleaning — phone, WhatsApp, email."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --brand-primary:#0B2044;
+      --brand-muted:#7F8995;
+      --brand-bg:#f9f9f9;
+    }
+    body{ background: var(--brand-bg); color: var(--brand-primary);}
+    .muted{ color: var(--brand-muted);}
+    a.link{ color: var(--brand-primary); text-decoration: underline; }
+    .btn-primary{ background: var(--brand-primary); color: white; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <header class="sticky top-0 z-30 backdrop-blur bg-white/70 border-b border-zinc-200">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="https://res.cloudinary.com/dzehpy3oi/image/upload/v1757272975/Jeth_Enterprise_Logo-removebg-preview_r70nf3.png" alt="JE Drycleaning" class="w-10 h-10 object-contain" />
+        <div class="leading-tight">
+          <div class="text-xl font-bold" style="color: var(--brand-primary)">JE Drycleaning</div>
+          <div class="text-xs muted">Fresh. Fast. Professional.</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-4 text-sm">
+        <a class="hover:underline" href="terms.html">Terms</a>
+        <a class="hover:underline" href="privacy.html">Privacy</a>
+        <a class="hover:underline" href="contact.html">Contact</a>
+        <a class="btn-primary px-3 py-1.5 rounded-xl" href="index.html#order">Place Order</a>
+      </nav>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-4 py-8 md:py-12">
+
+<section class="bg-white border border-zinc-200 rounded-2xl shadow-sm p-6 md:p-8 space-y-6">
+  <h1 class="text-3xl font-extrabold mb-2">Contact Us</h1>
+  <p class="muted">We’d love to hear from you.</p>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="space-y-4">
+      <div>
+        <div class="text-sm muted">Phone</div>
+        <a href="tel:+2348108299577" class="link">+234 810 829 9577</a>
+      </div>
+      <div>
+        <div class="text-sm muted">WhatsApp</div>
+        <a href="https://wa.me/2348108299577" target="_blank" rel="noopener" class="link">Chat with us</a>
+      </div>
+      <div>
+        <div class="text-sm muted">Email</div>
+        <a href="mailto:owner@example.com" class="link">owner@example.com</a>
+      </div>
+      <div>
+        <div class="text-sm muted">Location</div>
+        <div>Lagos, Nigeria</div>
+      </div>
+    </div>
+    <div class="space-y-3">
+      <div class="text-sm muted">Quick links</div>
+      <div class="flex flex-wrap gap-2">
+        <a class="btn-primary px-4 py-2 rounded-xl" href="index.html#order">Start an Order</a>
+        <a class="px-4 py-2 rounded-xl border border-zinc-300 hover:bg-zinc-50" href="terms.html">Terms</a>
+        <a class="px-4 py-2 rounded-xl border border-zinc-300 hover:bg-zinc-50" href="privacy.html">Privacy</a>
+      </div>
+      <div class="text-sm muted">Business hours</div>
+      <ul class="list-disc pl-5">
+        <li>Mon–Sat: 8:00–18:00</li>
+        <li>Sun: Closed</li>
+      </ul>
+      <p class="muted text-xs">Adjust hours and address as needed.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="border-t border-zinc-200">
+    <div class="max-w-5xl mx-auto px-4 py-8 text-sm flex flex-col md:flex-row gap-3 items-center justify-between">
+      <div class="muted">© <script>document.write(new Date().getFullYear())</script> JE Drycleaning. All rights reserved.</div>
+      <div class="flex items-center gap-3 muted">
+        <a class="hover:underline" href="terms.html">Terms</a><span>•</span>
+        <a class="hover:underline" href="privacy.html">Privacy</a><span>•</span>
+        <a class="hover:underline" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
