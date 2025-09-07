@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JE Drycleaning — Order Online</title>
+  <title>Jeth Enterprise Laundry Services — Order Online</title>
   <meta name="description" content="Order dry cleaning, laundry and bulk packages online from Jeth Enterprise Drycleaning (JE Drycleaning). Paystack or Pay on Delivery."/>
   <script src="https://cdn.tailwindcss.com"></script>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -27,7 +27,7 @@
   <div id="root"></div>
   <script type="text/babel" data-presets="react,env">
     const { useState, useMemo } = React;
-    const BRAND = { name: "Jeth Enterprise Drycleaning", short: "JE Drycleaning", green: "#0B2044"};
+    const BRAND = { name: "Jeth Enterprise Laundry Services", short: "JE Laundry Services", green: "#0B2044"};
     const INTEGRATIONS = { sheetUrl: "https://script.google.com/macros/s/AKfycbxW5dT-okAIyEJUrRmxrSuTWPZe9IUJb72YrDAz00I9IkyVTZhkjams5LQw9m0_32Ck/exec", emailjs: { publicKey: "OuKWlQkJNtjkWvEHN", serviceId: "service_9qf4p3j", templateId: "template_tyzxavw", toEmail: "owner@example.com" } };
     const PAYMENT = { paystackPublicKey: "pk_live_00a8446109bbab5370d25c75c7f03c734cd703b7" };
     const CURRENCY = (n) => `₦${(n ?? 0).toLocaleString("en-NG")}`;
