@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jeth Enterprise Laundry Services — Order Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
+    .header {
+      background: #7F8995;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .header img {
+      max-height: 200px;
+      margin-bottom: 10px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      margin-top: 0;
+      color: #0B2044;
+    }
+    .details {
+      margin: 15px 0;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 10px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer {
+      background: #f3f4f6;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #7F8995;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    pre {
+      background: #f3f4f6;
+      padding: 10px;
+      font-size: 12px;
+      overflow-x: auto;
+      border-radius: 6px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://res.cloudinary.com/dzehpy3oi/image/upload/v1757272975/Jeth_Enterprise_Logo-removebg-preview_r70nf3.png" alt="Jeth Enterprise Logo"/>
+      <h1>Jeth Enterprise Laundry Services</h1>
+    </div>
+    <div class="content">
+      <h2>Order Confirmation</h2>
+      <p>Hello <strong>{{customer_name}}</strong>,</p>
+      <p>Thank you for choosing <strong>Jeth Enterprise Laundry Services</strong>! We have received your order and will be in touch shortly.</p>
+      
+      <div class="details">
+        <p><strong>Customer Name:</strong> {{customer_name}}</p>
+        <p><strong>Phone:</strong> {{customer_phone}}</p>
+        <p><strong>Email:</strong> {{customer_email}}</p>
+        <p><strong>Order Total:</strong> {{order_total}}</p>
+      </div>
+
+      <h3>Order Details</h3>
+      <pre>{{order_lines}}
+
+Pickup address: {{address}}
+Preferred date: {{preferred_date}}
+Preferred time: {{preferred_time}}</pre>
+
+      <p>If you have any questions, please text or call us at 08108299577. You can also send complaints to this email.</p>
+      <a href="mailto:jethenterprises@gmail.com" class="button">Contact Support</a>
+    </div>
+  </div>
+</body>
+</html>
